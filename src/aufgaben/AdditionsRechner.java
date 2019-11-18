@@ -8,10 +8,10 @@ public class AdditionsRechner {
 		// TODO Auto-generated method stub
 		Scanner in = new Scanner(System.in);
 		//
-		int z1=in.nextInt();
-		int z2=in.nextInt();
-		System.out.println(z1+z2);
-		
+		int z1 = in.nextInt();
+		int z2 = in.nextInt();
+		System.out.println(z1 + z2);
+
 	}
 
 }
