@@ -37,7 +37,6 @@ if(inf==4) {
 float	z=x/y;
 System.out.println(z);
 }
-//
-	
+
 }
 }
