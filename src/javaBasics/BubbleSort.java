@@ -16,8 +16,6 @@ public class BubbleSort {
 				}
 			}
 		}
-		System.out.println(Arrays.toString(zahlen)); // Print out all the numbers in order
-
 	}
 
 }
