@@ -1,7 +1,6 @@
 package javaBasics;
 
 import java.util.ArrayList;
-import java.util.Collections;
 
 public class NamesSort {
 
@@ -15,8 +14,17 @@ public class NamesSort {
 		names.add("Martina");
 		names.add("Chemmy");
 		names.add("Oleg");
-		
-		Collections.sort(names);
+
+		for (int j = 0; j < names.size()- 1; j++) { 
+			for (int i = 0; i < names.size() - 1; ++i) { 
+				if (names.get(i).compareTo(names.get(i + 1))>0) { 
+												
+					String temporary = names.get(i);
+					names.set(i, names.get(i+1));
+					names.set(i+1, temporary);
+				}
+			}
+		}
 		System.out.print(names);
 	}
 
