@@ -17,7 +17,7 @@ public class MitgliederSort {
 
 		for (int j = 0; j < names.size() - 1; j++) {
 			for (int i = 0; i < names.size() - 1; ++i) {
-				if (names.get(i).compareTo(names.get(i + 1)) > 0) {
+				if (names.get(i).compareToIgnoreCase(names.get(i + 1)) > 0) {
 
 					String temporary = names.get(i);
 					names.set(i, names.get(i + 1));
@@ -25,8 +25,10 @@ public class MitgliederSort {
 				}
 			}
 		}
-		System.out.print(names);
-
+		//System.out.print(names);
+		for(String s:names) {
+			System.out.println(s);
+		}
 	}
 
 }
